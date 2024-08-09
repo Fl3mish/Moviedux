@@ -28,7 +28,10 @@ export default function MoviesGrid() {
   };
 
   const filteredMovies = movies.filter((movie) =>
-    movie.title.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+    movie.title
+      .trim()
+      .toLowerCase()
+      .includes(searchTerm.trim().toLocaleLowerCase())
   );
 
   return (
