@@ -115,7 +115,7 @@ export default function MoviesGrid({ movies, watchlist, toggleWatchlist }) {
             movie={movie}
             key={movie.id}
             toggleWatchlist={toggleWatchlist}
-            isWatchListed={watchlist.includes(movie.id)} //True or False
+            isWatchlisted={watchlist.includes(movie.id)} //True or False
           />
         ))}
       </div>
